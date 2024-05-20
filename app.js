@@ -179,7 +179,11 @@ else {
 
 // 8. Write a program to check whether the given number is divisible by 3. Show the message to the user if the number is divisible by 3.
 
-
+var num = +prompt("Please Enter a any number");
+var divisibleBy = num % 3 == 0
+if(divisibleBy){
+    document.write("The number is divisible by 3")
+}
 
 
 // 9. Write a program that checks whether the given input is an even number or an odd number.
