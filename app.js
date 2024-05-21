@@ -231,17 +231,25 @@ else {
 
 var num1 = +prompt("Enter number 1");
 var num2 = +prompt("Enter number 2");
+var operator = prompt("Enter any Operation (+, -, *, /, %)")
 
-var sum = num1 + num2;
-var sub = num1 - num2;
-var product = num1 * num2;
-var divide = num1 / num2;
-var modulus = num1 % num2;
-
-document.write(
-    num1 + " + " + num2 + " = " + sum + "<br>" +
-    num1 + " - " + num2 + " = " + sub + "<br>" +
-    num1 + " * " + num2 + " = " + product + "<br>" +
-    num1 + " / " + num2 + " = " + divide + "<br>" +
-    num1 + " % " + num2 + " = " + modulus + "<br>"
-);
+if("+" == operator){
+    document.write("<h1> Result </h1>")
+    document.write(num1 + num2)
+}
+else if("-" == operator){
+    document.write("<h1> Result </h1>")
+    document.write(num1 - num2)
+}
+else if("*" == operator){
+    document.write("<h1> Result </h1>")
+    document.write(num1 * num2)
+}
+else if("/" == operator){
+    document.write("<h1> Result </h1>")
+    document.write(num1 / num2)
+}
+else if("%" == operator){
+    document.write("<h1> Result </h1>")
+    document.write(num1 % num2)
+}
